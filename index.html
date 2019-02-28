@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Crystal Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="./assets/images/diamond.jpg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
@@ -18,32 +20,32 @@
 
     <div class="container text-light">
 
-        <div class="row text-center">
-
-            <h1>Crystal Collector</h1>
-
+        <div class="row text-center pt-3">
+            <div class="col-sm-12">
+                <h1>Crystal Collector</h1>
+            </div>
         </div>
 
         <div class="row text-center my-5">
             <div class="col-sm-6">
                 <div class="row">
                     <div class="col-6 my-1">
-                        <img id="diamond" class="crystal-image" src="assets/images/diamond.jpg"></img>
+                        <button type="button" class="btn btn-dark p-2"><img id="diamond" class="crystal-image" src="assets/images/diamond.jpg"></img></button>
                     </div>
 
                     <div class="col-6 my-1">
-                        <img id="ruby" class="crystal-image" src="assets/images/ruby.jpg"></img>
+                        <button type="button" class="btn btn-dark p-2"><img id="ruby" class="crystal-image" src="assets/images/ruby.jpg"></img></button>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="row">
                     <div class="col-6 my-1">
-                        <img id="topaz" class="crystal-image" src="assets/images/topaz.jpg"></img>
+                        <button type="button" class="btn btn-dark p-2"><img id="topaz" class="crystal-image" src="assets/images/topaz.jpg"></img></button>
                     </div>
 
                     <div class="col-6 my-1">
-                        <img id="emerald" class="crystal-image" src="assets/images/emerald.jpg"></img>
+                        <button type="button" class="btn btn-dark p-2"><img id="emerald" class="crystal-image" src="assets/images/emerald.jpg"></img></button>
                     </div>
                 </div>
             </div>
@@ -59,7 +61,7 @@
             <div class="col-sm-4 bg-dark p-3 m-3">
                 <div class="row py-2">
                     <div class="col-sm-6">
-                        <p>Target Number:</p>
+                        <p>Target Score:</p>
                     </div>
                     <div class="col-sm-6">
                         <h2 id="targetNumber">
@@ -68,7 +70,7 @@
                 </div>
                 <div class="row py-2">
                     <div class="col-sm-6">
-                        <p>Current Number:</p>
+                        <p>Current Score:</p>
                     </div>
                     <div class="col-sm-6">
                         <h2 id="currentNumber">
@@ -78,7 +80,21 @@
             </div>
 
         </div>
+        <div class="col-sm-12">
+            <button id="infoToggle" type="button" class="btn btn-dark">how to play</button>
 
+            <div id="instructions" class="pt-3">
+                <p>You will be given a random target score at the start of each round.</p>
+                <p>There are four gems above. By clicking on a gem you will add a specific amount of points to your
+                    current
+                    score.</p>
+                <p>You win the game by matching your current score to the target score, you lose the game if your
+                    current score goes above the target score.</p>
+                <p>The value of each gem is hidden from you until you click on it.</p>
+                <p>Each time a new round starts, the value of each gem changes.</p>
+
+            </div>
+        </div>
 
     </div>
     <!-- Game Javascript -->

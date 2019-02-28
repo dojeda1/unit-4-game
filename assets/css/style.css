@@ -1,3 +1,7 @@
 body {
     background-image: url("../images/dark-triangles.png")
 }
+
+#instructions {
+    display: none;
+}

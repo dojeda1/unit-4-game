@@ -73,3 +73,7 @@ $(".crystal-image").on("click", function () {
         reset();
     }
 })
+
+$("#infoToggle").on("click", function () {
+    $("#instructions").toggle();
+})
