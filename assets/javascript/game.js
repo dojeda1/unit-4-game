@@ -43,7 +43,6 @@ function reset() {
     console.log("target Score: " + targetScore);
     console.log("current Score: " + currentScore);
     console.log("diaVal: " + diamondValue)
-    console.log("diaVal: " + $("#diamond").attr("data-gemValue"));
     console.log("rubVal: " + rubyValue)
     console.log("topVal: " + topazValue)
     console.log("emeVal: " + emeraldValue)
