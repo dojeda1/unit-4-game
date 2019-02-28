@@ -35,6 +35,11 @@ function reset() {
     emeraldValue = randomGemValue();
     $("#emerald").attr("data-gemValue", emeraldValue);
 
+    $("#wins").text(wins)
+    $("#losses").text(losses)
+    $("#targetNumber").text(targetScore)
+    $("#currentNumber").text(currentScore)
+
     console.log("target Score: " + targetScore);
     console.log("current Score: " + currentScore);
     console.log("diaVal: " + diamondValue)
@@ -52,6 +57,7 @@ $(".crystal-image").on("click", function () {
     gemValue = parseInt(gemValue);
 
     currentScore += gemValue;
+    $("#currentNumber").text(currentScore);
     console.log(currentScore);
     if (currentScore === targetScore) {
         console.log("You Win!")
