@@ -60,6 +60,7 @@ $(".crystal-image").on("click", function () {
     console.log(currentScore);
     if (currentScore === targetScore) {
         console.log("You Win!")
+        $("#winLoseTag").html("<span class='text-success'>You Win!</span>");
         wins++;
         console.log("Wins: " + wins);
         console.log("Losses: " + losses);
@@ -67,6 +68,7 @@ $(".crystal-image").on("click", function () {
 
     } else if (currentScore > targetScore) {
         console.log("You Lose!")
+        $("#winLoseTag").html("<span class='text-danger'>You Lose!</span>");
         losses++;
         console.log("Wins: " + wins);
         console.log("Losses: " + losses);
