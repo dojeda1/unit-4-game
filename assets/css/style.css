@@ -5,3 +5,17 @@ body {
 #instructions {
     display: none;
 }
+
+@media screen and (max-width: 980px) {
+
+    .crystal-image {
+
+        width: 100%;
+
+    }
+
+    .button-column {
+
+        padding: 5px;
+    }
+}
