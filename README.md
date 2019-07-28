@@ -6,6 +6,8 @@ Each Crystal is worth a random number of points. When one is clicked, the total 
 
   **Visit Web App [Here!](https://dojeda1.github.io/unit-4-game/)**
 
+![Web App Image](./demo.png)
+
 ### Technologies used
 
 * HTML
