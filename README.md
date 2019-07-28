@@ -11,4 +11,5 @@ Each Crystal is worth a random number of points. When one is clicked, the total 
 * HTML
 * CSS
 * JavaScript
+* jQuery
 * Bootstrap
